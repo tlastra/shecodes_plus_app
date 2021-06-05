@@ -1,16 +1,75 @@
+body {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 5px 20px;
+  background: radial-gradient(
+    circle at 49.8% 44.4%,
+    rgb(251, 230, 59) 0%,
+    rgb(161, 255, 63) 90%
+  );
+  font-family: "Questrial", sans-serif;
+}
 h1 {
+  color: #38817a;
+  display: block;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 0px;
+}
+.btn-outline-success {
+  display: block;
+  margin: 0px auto;
+  border: 0.5px solid black;
+  padding: 5px 5px 0.5px;
+  border-radius: 5px;
+  background-color: white;
+}
+.btn-current {
+  display: block;
+  margin: 0px auto;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 7px;
+  background-color: white;
+  font-size: 15px;
+}
+h2 {
+  color: #a3de83;
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
   text-align: center;
 }
-
-img {
-  width: 90%;
-  margin: 20px auto;
-  border-radius: 20px;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.Sunday {
   display: block;
 }
-
-.contact-btn {
+.Monday {
   display: block;
-  margin: 0 auto;
-  width: 200px;
+}
+.Tuesday {
+  display: block;
+}
+.Wednesday {
+  display: block;
+}
+.Thursday {
+  display: block;
+}
+.Friday {
+  display: block;
+}
+.card-text {
+  font-family: "Vidaloka", serif;
+}
+.btn,
+btn-primary {
+  font-family: "Shrikhand", cursive;
 }
