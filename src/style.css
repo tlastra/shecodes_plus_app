@@ -50,8 +50,9 @@ ul {
 }
 .github {
   align-items: center;
-  display: flex;
+  display: block;
   margin: 0 auto;
+  justify-content: center;
 }
 .Sunday {
   display: block;
