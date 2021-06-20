@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+ <head>
     <title>☀️Weather 🌧App</title>
     <meta charset="UTF-8" />
     <link
@@ -9,21 +9,21 @@
       integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
       crossorigin="anonymous"
     />
-    <link href="src/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Questrial&family=Shrikhand&family=Vidaloka&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="src/style.css" />
   </head>
 
-  <body>
-<div class="container">
+ <body>
+  <div class="container">
     <div class = "app">
-        <form class = "search-form">
-          <div class="form-group">
-            <label for="InputLocation">Check Your Location's Weather</label>
+      <form class = "search-form">
+        <div class="form-group">
+                <label for="InputLocation">Check Your Location's Weather</label>
             <input
               autocomplete="off"
               autofocus="on"
@@ -32,23 +32,23 @@
               id="inputLocation"
               placeholder="Ex: San Jose, CA, USA"
             />
-          </div>
-          <div class="search-button">
-            <input
+        </div>
+        <div class="search-button">
+         <input
               type="submit"
-              value="Search"
-              class="form-control btn btn-outline-success"
-            />
-          </div>
-        </form>
+              value="search"
+              class="btn btn-outline-success"
+              />
+        </div>
+      </form>
       <div class ="current-form">
           <form class="click-form">
             <div class="form-group">
                 <button type="button" class="btn-current">Current ⌖</button>
-        </div>
-    </form>
-    </div>
-    <h1 class="city"></h1>
+            </div>
+         </form>
+      </div>
+      <h1 class="city"></h1>
       <h2>
         <div class="local">
           <div id="text">
@@ -56,86 +56,16 @@
             <li id="currentLocation">San Jose
             <br />CA, USA</li>
             <li id="date"></li>
-            <li id="temp"></li>
+            <li id="temp">°F</li>
           </div>
         </div>
       </h2>
-      <p class="forecast">
-      <div class="row">
-        <div class="col-3">
-          <div class="Sunday">
-            <div class="card" style="width: 10rem;">
-              <div class="card-body">
-                <h5 class="card-title">Sunday</h5>
-                <p class="card-text">77° ☀️ 39°</p>
-                <a href="#" class="btn btn-primary">Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="Monday">
-            <div class="card" style="width: 10rem;">
-              <div class="card-body">
-                <h5 class="card-title">Monday</h5>
-                <p class="card-text">84° ☀️ 48°</p>
-                <a href="#" class="btn btn-primary">Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="Tuesday">
-            <div class="card" style="width: 10rem;">
-              <div class="card-body">
-                <h5 class="card-title">Tuesday</h5>
-                <p class="card-text">86° ☀️ 54°</p>
-                <a href="#" class="btn btn-primary">Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="Wednesday">
-            <div class="card" style="width: 10rem;">
-              <div class="card-body">
-                <h5 class="card-title">Wednesday</h5>
-                <p class="card-text">90°☀️ 54°</p>
-                <a href="#" class="btn btn-primary">Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="Thursday">
-            <div class="card" style="width: 10rem;">
-              <div class="card-body">
-                <h5 class="card-title">Thursday</h5>
-                <p class="card-text">73° 🌤 46°</p>
-                <a href="#" class="btn btn-primary">Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-3">
-          <div class="Friday">
-            <div class="card" style="width: 10rem;">
-              <div class="card-body">
-                <h5 class="card-title">Friday</h5>
-                <p class="card-text">73° 🌤 36°</p>
-                <a href="#" class="btn btn-primary">Details</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-<p>
-  <a href="//github.com/tlastra/shecodes_plus_app" title="GitHub Repository"> GitHub Repository </a>
-</p>
+     </div> 
+  </div>
+    <p class="github">
+    <a href="//github.com/tlastra/shecodes_plus_app" title="GitHub Repository"> GitHub Repository </a>
     </p>
-      <script src="src/script.js"></script>
-    </div>
+    <script src="src/script.js">
+    </script>
   </body>
 </html>
