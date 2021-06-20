@@ -10,14 +10,16 @@ body {
   );
   font-family: "Questrial", sans-serif;
 }
+.container {
+  margin-bottom: 20px;
+}
 h1 {
   color: #38817a;
-  display: block;
   position: relative;
-  top: 15px;
-  left: 15px;
-  right: 15px;
-  bottom: 0px;
+  font-size: medium;
+  font-weight: lighter;
+  line-height: normal;
+  margin-bottom: 0;
 }
 .btn-outline-success {
   display: block;
@@ -47,6 +49,28 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+li {
+  list-style: none;
+  color: #38817a;
+  font-size: medium;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+li:first-letter {
+  text-transform: capitalize;
+}
+.app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.app {
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
 }
 .github {
   align-items: center;
