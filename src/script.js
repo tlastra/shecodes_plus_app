@@ -1,5 +1,5 @@
 let now = new Date();
-let h2 = document.querySelector("h2 #date");
+let h2 = document.querySelector("h1 #date");
 let hours = now.getHours();
 let minutes = now.getMinutes();
 let days = [
@@ -40,5 +40,6 @@ function getCurrentLocation(event) {
 }
 let searchLocation = document.querySelector(".search-form");
 searchLocation.addEventListener("submit", handleSubmit);
+
 let currentLocationButton = document.querySelector(".btn-current");
 currentLocationButton.addEventListener("click", getCurrentLocation);

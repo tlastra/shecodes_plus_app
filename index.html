@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
- <head>
+  <head>
     <title>☀️Weather 🌧App</title>
     <meta charset="UTF-8" />
     <link
@@ -18,65 +18,75 @@
     <link href="src/style.css" />
   </head>
 
- <body>
-  <div class="container">
-    <div class="app">
-      <div class="app-wrapper">
-       <form class = "search-form">
-        <div class="form-group">
-                <label for="InputLocation">Check Your Location's Weather</label>
-            <input
-              autocomplete="off"
-              autofocus="on"
-              type="search"
-              class="form-control"
-              id="inputLocation"
-              placeholder="Ex: San Jose, CA, USA"
-            />
-        </div>
-        <div class="search-button">
-         <input
-              type="submit"
-              value="search"
-              class="btn btn-outline-success"
-              />
-        </div>
-       </form>
-       <div class ="current-form">
-          <form class="click-form">
+  <body>
+    <div class="container">
+      <div class="app">
+        <div class="app-wrapper">
+          <form class="search-form">
             <div class="form-group">
-                <button type="button" class="btn-current">Current ⌖</button>
+              <label for="InputLocation">Check Your Location's Weather</label>
+              <input
+                autocomplete="off"
+                autofocus="on"
+                type="search"
+                class="form-control"
+                id="inputLocation"
+                placeholder="Ex: San Jose, CA, USA"
+              />
             </div>
-         </form>
-       </div>
-       <div class="row">
-        <div class="col-6">
-         <h1 class="city"></h1>
-          <ul>
-           <li id="date"></li>
-           <li id="time"></li>
-           <li id="description"></li>
-          </ul>
-        </div> 
-       </div>   
-       <h2>
-        <div class="row">
-         <div class="col-6">
-          <div id="text">
-            <ul>
-            <li id="currentLocation">San Jose
-            <br />CA, USA</li>
+            <div class="search-button">
+              <input
+                type="submit"
+                value="search"
+                class="btn btn-outline-success"
+              />
+            </div>
+          </form>
+          <div class="current-form">
+            <form class="click-form">
+              <div class="form-group">
+                <button type="button" class="btn-current">Current ⌖</button>
+              </div>
+            </form>
           </div>
-         </div>  
+          <div class="row">
+            <div class="col-6">
+              <h1 class="city"></h1>
+              <ul>
+                <li id="date"></li>
+                <li id="time"></li>
+                <li id="description"></li>
+              </ul>
+            </div>
+          </div>
+          <h2>
+            <div class="row">
+              <div class="col-6" class="float-left">
+                <div id="text">
+                  <img
+                    class="float-left"
+                    id="icon"
+                    src="http://openweathermap.org/img/wn/${response.data.weather[0].icon};@2x.png"
+                    alt=""
+                  />
+                  <ul />
+                  <li id="currentLocation">San Jose <br />CA, USA</li>
+                  <li id="temp"></li>
+                </div>
+              </div>
+            </div>
+          </h2>
         </div>
-       </h2>
-     </div>
-    </div> 
-  </div>
+      </div>
+    </div>
     <small class="github">
-    <a href="//github.com/tlastra/shecodes_plus_app" title="GitHub Repository"> GitHub Repository </a>
+      <a
+        href="//github.com/tlastra/shecodes_plus_app"
+        title="GitHub Repository"
+      >
+        GitHub Repository
+      </a>
     </small>
-    <script src="src/script.js">
-    </script>
+    <script src="src/script.js"></script>
   </body>
 </html>
