@@ -12,7 +12,7 @@ let days = [
   "Saturday",
 ];
 let day = days[now.getDay()];
-h2.innerHTML = `${day} ${hours}:${minutes}`;
+h1.innerHTML = `${day} ${hours}:${minutes}`;
 function displayWeatherCondition(response) {
   let h2 = document.querySelector("#currentLocation");
   let h3 = document.querySelector("#temp");
