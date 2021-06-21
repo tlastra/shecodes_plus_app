@@ -20,27 +20,29 @@
 
   <body>
     <div class="container">
-      <div class="app">
-        <div class="app-wrapper">
-          <form class="search-form">
-            <div class="form-group">
-              <label for="InputLocation">Check Your Location's Weather</label>
-              <input
+      <div class="app-wrapper">
+        <div class="app">
+          <form class="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+               <label for="InputLocation">Check Your Location's Weather</label>
+                <input
                 autocomplete="off"
                 autofocus="on"
                 type="search"
                 class="form-control"
-                id="inputLocation"
+                id="city-input"
                 placeholder="Ex: San Jose, CA, USA"
-              />
+                />
             </div>
-            <div class="search-button">
+            <div class="col-9">
               <input
                 type="submit"
                 value="search"
                 class="btn btn-outline-success"
               />
             </div>
+           </div> 
           </form>
           <div class="current-form">
             <form class="click-form">
