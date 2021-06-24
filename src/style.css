@@ -3,18 +3,14 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding: 5px 20px;
-  background-color: radial-gradient(
-    circle at 49.8% 44.4%,
-    rgb(251, 230, 59) 0%,
-    rgb(161, 255, 63) 90%
-  );
+  background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   font-family: "Questrial", sans-serif;
 }
 .overview {
   margin-bottom: 20px;
 }
 h1 {
-  color: #38817a;
+  color: #1c0c59;
   position: relative;
   font-size: medium;
   font-weight: lighter;
@@ -28,7 +24,7 @@ ul {
 }
 li {
   list-style: none;
-  color: #38817a;
+  color: #1c0c59;
   font-size: medium;
   font-weight: normal;
   line-height: normal;
@@ -45,7 +41,7 @@ li:first-letter {
 
 .app {
   padding: 20px;
-  border: 1px solid #dadde1;
+  border: 1px solid #f6eb9a;
   border-radius: 5px;
 }
 .github {
