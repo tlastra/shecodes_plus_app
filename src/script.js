@@ -90,7 +90,7 @@ let celsiusTemperature = null;
 let searchLocation = document.querySelector(".search-form");
 searchLocation.addEventListener("submit", handleSubmit);
 
-let form = document.querySelector("#search-form");
+let form = document.querySelector("#form-control");
 form.addEventListener("submit", handleSubmit);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
