@@ -67,28 +67,21 @@ li:first-letter {
   background-color: white;
   font-size: 15px;
 }
-.Sunday {
-  display: block;
-}
-.Monday {
-  display: block;
-}
-.Tuesday {
-  display: block;
-}
-.Wednesday {
-  display: block;
-}
-.Thursday {
-  display: block;
-}
-.Friday {
-  display: block;
-}
 .card-text {
   font-family: "Vidaloka", serif;
 }
 .btn,
 btn-primary {
   font-family: "Shrikhand", cursive;
+}
+.weather-forecast {
+  margin-top: 20px;
+  text-align: center;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  color: black;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
 }
