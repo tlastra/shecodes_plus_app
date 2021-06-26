@@ -35,15 +35,16 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  days.forEach(function (forecastDay) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
     <div class="col-2">
     <div class="weather-forecast-date">${formatDay(forecastDay.dt)}</div>
     <img src="http://openweathermap.org/img/wn/${
       forecastDay.weather[0].icon
-    }@2x.png" alt="" width="40"/>
+    }@2x.png" alt="" width="45"/>
     <div class="weather-forecast-temperatures">
       <span class="weather-forecast-temperature-max">${
         forecastDay.temp.max
@@ -54,6 +55,7 @@ function displayForecast(response) {
     </div>
     </div>
     `;
+    }
   });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
@@ -68,7 +70,6 @@ function displayTemperature(response) {
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
   let windElement = document.querySelector("#wind");
-  let precipitationElement = document.querySelector("#precipitation");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
 
@@ -78,7 +79,6 @@ function displayTemperature(response) {
   cityElement.innerHTML = response.data.name;
   descriptionElement.innerHTML = response.data.weather[0].description;
   windElement.innerHTML = Math.round(response.data.wind.speed);
-  precipitationElement.innerHTML = Math.round(response.data.precipitation);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
     "src",
