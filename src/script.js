@@ -95,8 +95,8 @@ function displayCelsiusTemperature(event) {
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let days = ["thur", "fri", "sat", "sun"];
+  let forecastHTML = `<div class="row">`;
   days.forEach(function (day) {
-    let forecastHTML = `<div class="row">`;
     forecastHTML =
       forecastHTML +
       `
@@ -104,14 +104,14 @@ function displayForecast(response) {
     <div class="weather-forecast-date">${day}</div>
     <img src="URL?" alt="" width="40"/>
     <div class="weather-forecast-temperatures">
-    <span class="weather-forecast-temperature-max">18°</span>
-    <span class="weather-forecast-temperature-min">12°</span>
+      <span class="weather-forecast-temperature-max">18°</span>
+      <span class="weather-forecast-temperature-min">12°</span>
     </div>
     </div>
     `;
-    forecastHTML = forecastHTML + `</div>`;
-    forecastElement.innerHTML = forecastHTML;
   });
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
 }
 
 let celsiusTemperature = null;
