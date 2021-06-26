@@ -85,3 +85,11 @@ btn-primary {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
+.weather-temperature .active {
+  color: rgb(67, 3, 97);
+  cursor: default;
+}
+
+.weather-temperature .active:hover {
+  text-decoration: none;
+}
