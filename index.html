@@ -25,23 +25,23 @@
           <form class="search-form" class="mb-3">
             <div class="row">
               <div class="col-9">
-               <label form="inputLocation">Check Your Location's Weather</label>
+                <label form="inputLocation">Check Your City's Weather</label>
                 <input
-                autocomplete="off"
-                autofocus="on"
-                type="search"
-                class="form-control"
-                id="city-input"
-                placeholder="Ex: San Jose, CA, USA"
+                  autocomplete="off"
+                  type="search"
+                  class="form-control"
+                  id="city-input"
+                  placeholder="Enter your City"
                 />
+              </div>
               <div class="col-3">
-              <input
-                type="submit"
-                value="search"
-                class="btn btn-light w-100"
-              /></div>
+                <input
+                  type="submit"
+                  value="search"
+                  class="btn btn-light w-100"
+                />
+              </div>
             </div>
-           </div> 
           </form>
           <div class="current-form" id="current-btn">
             <form class="click-form">
@@ -50,45 +50,46 @@
               </div>
             </form>
           </div>
-          <div class="row">
-            <div class="col-6" class=”clearfix”>
-              <hi class="overview" id="city"></hi>
-              <ul>
-                <li>Last updated:<span id="date"> </span>🗓</li>
-                <li id="time"> ⌚️</li>
-              </ul>
-            </div>
-          </div>
+          <div class="overview">
             <div class="row">
-              <div class="col-6" class=”clearfix” class="float-left">
+              <div class="col-6" class="”clearfix”">
+                <hi id="city"></hi>
+                <ul>
+                  <li>Last updated:<span id="date"> </span>🗓</li>
+                  <li id="time">⌚️</li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-6" class="”clearfix”" class="float-left">
                 <div class="clearfix" class="weather-temperature">
                   <img
                     class="float-left"
                     id="icon"
                     src="https://openweathermap.org/img/wn/${displayTemperature.data.weather[0].icon}@2x.png"
-                    alt=""/>
+                    alt=""
+                  />
                   <div class="float-left">
-                   <strong id="temp"></strong>
+                    <strong id="temp"></strong>
                     <span class="units">
-                      <a href="#" id="celsius-link" class="active">°C</a> 
+                      <a href="#" id="celsius-link" class="active">°C</a>
                       <a href="#" id="fahrenheit-link">°F</a>
                     </span>
-                   </div>
-                </div> 
-                <div class="col-6">
-                 <ul>
-                   <li> <span id="description"> </span>🧐</li>
-                  <li>Wind: <span id="wind"> </span>🍃</li>
-                 </ul>
+                  </div>
                 </div>
-              </div>      
+                <div class="col-6">
+                  <ul>
+                    <li><span id="description"> </span>🧐</li>
+                    <li>Wind: <span id="wind"> </span>🍃</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="weather-forecast" id="forecast">
-      </div>
+    <div class="weather-forecast" id="forecast"></div>
     <small class="github">
       <a
         href="//github.com/tlastra/shecodes_plus_app"
