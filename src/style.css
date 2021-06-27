@@ -74,6 +74,9 @@ li:first-letter {
 btn-primary {
   font-family: "Shrikhand", cursive;
 }
+.btn-current {
+  flex-direction: right;
+}
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
