@@ -33,24 +33,18 @@ function displayForecast(response) {
   let forecast = response.data.daily;
 
   let forecastElement = document.querySelector("#forecast");
+  let forecastMax = document.querySelector(
+    weather - forecast - temperature - max
+  );
+  let forecastMin = document.querySelector(
+    weather - forecast - temperature - min
+  );
+  let forecastDay = document.querySelector(weather - forecast - date);
 
-  let forecastHTML = `<div class="row">`;
-  forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
-      let forecastMax = document.querySelector(
-        weather - forecast - temperature - max
-      );
-      let forecastMin = document.querySelector(
-        weather - forecast - temperature - min
-      );
-      let forecastDay = document.querySelector(weather - forecast - date);
+  forecastMax.innerHTML = forecastDay.temp.max;
+  forecastMin.innerHTML = forecastDay.temp.min;
+  forecastDay.innerHTML = formatDay(forecastDay.dt);
 
-      forecastMax.innerHTML = forecastDay.temp.max;
-      forecastMin.innerHTML = forecastDay.temp.min;
-      forecastDay.innerHTML = formatDay(forecastDay.dt);
-    }
-  });
-  forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
 function getForecast(coordinates) {
