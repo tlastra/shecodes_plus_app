@@ -41,7 +41,7 @@ li:first-letter {
 .github {
   align-items: center;
   display: block;
-  margin: 0 auto;
+  margin: 30px auto;
   justify-content: center;
 }
 .btn {
