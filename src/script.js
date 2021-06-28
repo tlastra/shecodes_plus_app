@@ -29,29 +29,7 @@ function formatDay(timestamp) {
 
   return days[day];
 }
-function displayForecast(response) {
-  let forecast = response.data.daily;
 
-  let forecastElement = document.querySelector("#forecast");
-  let forecastMax = document.querySelector(
-    weather - forecast - temperature - max
-  );
-  let forecastMin = document.querySelector(
-    weather - forecast - temperature - min
-  );
-  let forecastDay = document.querySelector(weather - forecast - date);
-
-  forecastMax.innerHTML = forecastDay.temp.max;
-  forecastMin.innerHTML = forecastDay.temp.min;
-  forecastDay.innerHTML = formatDay(forecastDay.dt);
-
-  forecastElement.innerHTML = forecastHTML;
-}
-function getForecast(coordinates) {
-  let apiKey = "a32a92574243f77d3ebcc51cf8a19a88";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}& appid=${apiKey}&units=imperial`;
-  axios.get(apiUrl).then(displayForecast);
-}
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temp");
   let cityElement = document.querySelector("#city");
@@ -71,7 +49,6 @@ function displayTemperature(response) {
     "src",
     `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  getForecast(response.data.coord);
 }
 function searchCity(city) {
   let apiKey = "a32a92574243f77d3ebcc51cf8a19a88";
@@ -87,8 +64,6 @@ function handleSubmit(event) {
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temp");
-  celsiusLink.classList.remove("active");
-  fahrenheitLink.classList.add("active");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
