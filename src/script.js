@@ -37,13 +37,17 @@ function displayForecast(response) {
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
     if (index < 6) {
-      let forecastMax = document.querySelector(.weather-forecast-temperature-max);
-      let forecastMin = document.querySelector(.weather-forecast-temperature-min);
-      let forecastDay = document.querySelector(.weather-forecast-date);
+      let forecastMax = document.querySelector(
+        weather - forecast - temperature - max
+      );
+      let forecastMin = document.querySelector(
+        weather - forecast - temperature - min
+      );
+      let forecastDay = document.querySelector(weather - forecast - date);
 
       forecastMax.innerHTML = forecastDay.temp.max;
       forecastMin.innerHTML = forecastDay.temp.min;
-      forecastDay.innerHTML = (formatDay(forecastDay.dt));
+      forecastDay.innerHTML = formatDay(forecastDay.dt);
     }
   });
   forecastHTML = forecastHTML + `</div>`;
