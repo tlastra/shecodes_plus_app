@@ -3,14 +3,14 @@ body {
   font-family: "Questrial", sans-serif;
 }
 .overview {
-  margin-bottom: 20px;
+  margin: 20px;
 }
 h1 {
   color: #1c0c59;
-  font-size: 20px;
-  font-weight: 75;
-  line-height: 25px;
-  margin-bottom: 0;
+  font-size: 40px;
+  font-weight: 90;
+  line-height: 30px;
+  margin-bottom: 10px;
 }
 ul {
   margin: 0;
@@ -44,22 +44,8 @@ li:first-letter {
   margin: 0 auto;
   justify-content: center;
 }
-.btn-current {
-  display: block;
-  margin: 0px auto;
-  border: 1px solid black;
-  padding: 5px;
-  border-radius: 7px;
-  background-color: white;
-  font-size: 15px;
-}
-.card-text {
-  font-family: "Vidaloka", serif;
-}
-.btn,
-form-control {
+.btn {
   font-family: "Shrikhand", cursive;
-  flex-direction: right;
 }
 .weather-temperature img {
   margin-right: 5px;
@@ -78,29 +64,4 @@ form-control {
   position: relative;
   font-size: 16px;
   top: -34px;
-}
-
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
-
-.weather-forecast {
-  margin-top: 20px;
-  text-align: center;
-  color: #4b047a;
-}
-.weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
-}
-.weather-forecast-temperature-min {
-  opacity: 0.5;
-}
-.weather-forecast-temperatures {
-  font-size: 13px;
 }
