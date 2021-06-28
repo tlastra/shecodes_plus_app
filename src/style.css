@@ -37,7 +37,6 @@ li:first-letter {
   padding: 20px;
   border: 1px solid #f6eb9a;
   border-radius: 10px;
-  box-shadow: 10px;
 }
 .github {
   align-items: center;
