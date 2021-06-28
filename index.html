@@ -23,24 +23,22 @@
       <div class="app-wrapper">
         <div class="app">
           <form class="search-form" class="mb-3">
-            <div class="row">
-              <div class="col">
-                <div class="d-grid gap-2 d-md-block">
-                  <label form="inputLocation">Check Your City's Weather</label>
+            <div class="row g-2">
+              <div class="col-auto">
+                <label form="inputLocation">Check Your City's Weather</label>
+                <input
+                  autocomplete="off"
+                  type="search"
+                  class="form-control"
+                  id="city-input"
+                  placeholder="Enter your City"
+                />
+                <div class="col-auto">
                   <input
-                    autocomplete="off"
-                    type="search"
-                    class="form-control"
-                    id="city-input"
-                    placeholder="Enter your City"
+                    type="submit"
+                    value="search"
+                    class="btn btn-light w-100"
                   />
-                  <div class="col">
-                    <input
-                      type="submit"
-                      value="search"
-                      class="btn btn-light w-100"
-                    />
-                  </div>
                 </div>
               </div>
             </div>
